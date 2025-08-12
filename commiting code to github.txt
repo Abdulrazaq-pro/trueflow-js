@@ -1,0 +1,28 @@
+git init
+git add .
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/Abdulrazaq-pro/razaq.git
+git push -u origin main
+
+
+remove redundant code in this code
+improve the class naming to make it easier to read
+without loosing details
+and take consent of media query
+make the code such that Selector figure, h2,button, p, ul have local class 
+and its local class that is used to style them not selector
+use tailwind where applicable , i prefer it to css
+
+
+Refactor the provided HTML and CSS code to remove any redundant or unnecessary code while preserving all essential details. Use Tailwind CSS for styling to ensure a clean, modern, and responsive UI design. Ensure the refactored UI looks exactly the same as the original, with no visual differences or loss of functionality. Additionally, ensure that the code incorporates media queries to maintain responsiveness across all device sizes (desktop, tablet, mobile). The final output should be efficient, clean, and optimized for performance, adhering to best practices for modern UI design with Tailwind
+
+
+
+remove redundant code in this code
+without loosing details
+use tailwind 
+and take consent of media query
+
+ui must be exactly how i expect it,check the given code and ensure the ui is nit any different , check and confirm before output
+modern ui feel
