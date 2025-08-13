@@ -28,16 +28,18 @@ import FAQ from "./components/FAQ";
 import CommunitySection from "./components/CommunitySection";
 // import Footer from "./components/Footer";
 import TrueFlowHeader from "./components/Header";
-import Button from "@/components/fancybutton";
+// import Button from "@/components/fancybutton";
 import FooterSection from "./components/Footer";
 import { Text } from "@/components/Text";
 import CTA from "./components/CTA";
+import { Button } from "@/components/ui/button";
 
 export default function LandingPage() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const { theme, setTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
+  const [isNavigating, setIsNavigating] = useState(false);
 
   useEffect(() => {
     setMounted(true);
@@ -76,10 +78,22 @@ export default function LandingPage() {
             chains, and manage holdings seamlessly.
           </Text>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="md">
-              Get Started
-              <span className="ml-2">
-                <img className="size-4" src="/icons/export-dark.svg" alt="" />
+            <Button
+              size="lg"
+              className={`bg-green-600 hover:bg-green-700 rounded-lg transition-all duration-300 ${
+                isNavigating ? "scale-95" : ""
+              }`}
+              disabled={isNavigating}
+            >
+              {isNavigating ? "Navigating..." : "Get Started"}
+              <span className="ml-2 inline-flex">
+                <img
+                  className={`size-4 transition-all duration-300 ${
+                    isNavigating ? "rotate-180" : "rotate-0"
+                  }`}
+                  src="/icons/export-dark.svg"
+                  alt="arrow icon"
+                />
               </span>
             </Button>
           </div>
@@ -102,15 +116,35 @@ export default function LandingPage() {
           </h1>
           <p className="text-md md:text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
             Swap, bridge, and manage assets across chains, fast, gas efficient,
-            and built for DeFi's future.
+            and built for DeFi&apos;s future.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg">
+            {/* <Button size="lg">
               Launch App
               <span className="ml-2">
                 <img className="size-4" src="/icons/export-dark.svg" alt="" />
               </span>
-            </Button>
+            </Button> */}
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Button
+                size="lg"
+                className={`bg-green-600 hover:bg-green-700 rounded-lg transition-all duration-300 ${
+                  isNavigating ? "scale-95" : ""
+                }`}
+                disabled={isNavigating}
+              >
+                {isNavigating ? "Navigating..." : " Launch App"}
+                <span className="ml-2 inline-flex">
+                  <img
+                    className={`size-4 transition-all duration-300 ${
+                      isNavigating ? "rotate-180" : "rotate-0"
+                    }`}
+                    src="/icons/export-dark.svg"
+                    alt="arrow icon"
+                  />
+                </span>
+              </Button>
+            </div>
           </div>
         </div>
 

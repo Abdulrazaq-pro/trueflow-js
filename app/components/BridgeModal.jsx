@@ -17,32 +17,16 @@ import { AnimateInView, useAnimationVariants } from "@/components/Animation";
 import { Text } from "@/components/Text";
 import WrappedCustomConnectButton from "@/components/CustomConnectButton";
 
-interface Token {
-  symbol: string;
-  name: string;
-  icon: string;
-  balance: number;
-}
 
-interface SwapSectionProps {
-  label: string;
-  amount: string;
-  onAmountChange: (value: string) => void;
-  selectedToken: string;
-  onTokenChange: (value: string) => void;
-  tokens: Token[];
-  balance: number;
-  showMax?: boolean;
-}
 
-const tokens: Token[] = [
+const tokens= [
   { symbol: "USDC", name: "USD Coin", icon: "💰", balance: 0 },
   { symbol: "ETH", name: "Ethereum", icon: "💎", balance: 0.000422 },
   { symbol: "BTC", name: "Bitcoin", icon: "₿", balance: 0.001 },
   { symbol: "USDT", name: "Tether", icon: "💵", balance: 100 },
 ];
 
-const SwapSection: React.FC<SwapSectionProps> = ({
+const SwapSection= ({
   label,
   amount,
   onAmountChange,

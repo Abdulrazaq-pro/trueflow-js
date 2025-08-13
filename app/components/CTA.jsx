@@ -8,22 +8,22 @@ export default function CTA() {
   const [isNavigating, setIsNavigating] = useState(false);
 
   return (
-    <div className="w-full flex justify-center  pt-6">
+    <div className="w-full flex justify-center  pt-12">
       {" "}
       {/* Outer container for full width and centering */}
       <div
         style={{ width: "70%" }}
         className="flex justify-between items-center w-full px-6 bg-black rounded-t-lg"
       >
-        {" "}
+      
         {/* Inner container with max-width */}
-        <div>
+        <div className="flex items-center">
           <Text
             as="h1"
             variant="heading"
             size="3xl"
             weight="bold"
-            className="text-white tracking-tight mb-8 bg-clip-text text-transparent"
+            className="text-white tracking-tight my-8 flex justify-center items-center"
           >
             Swapping & Bridging
           </Text>

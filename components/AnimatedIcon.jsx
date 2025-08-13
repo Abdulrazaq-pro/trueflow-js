@@ -4,13 +4,6 @@ import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { MorphSVGPlugin } from "gsap/MorphSVGPlugin";
 
-type AnimatedIconProps = {
-  initialIconSrc: string;
-  targetIconSrc: string;
-  className?: string;
-  buttonText?: string;
-  iconSize?: number;
-};
 
 export default function AnimatedIcon({
   initialIconSrc,
@@ -18,11 +11,11 @@ export default function AnimatedIcon({
   className = "",
   buttonText = "Toggle Icon",
   iconSize = 24,
-}: AnimatedIconProps) {
-  const buttonRef = useRef<HTMLButtonElement>(null);
-  const containerRef = useRef<HTMLDivElement>(null);
-  const initialIconRef = useRef<HTMLImageElement>(null);
-  const targetIconRef = useRef<HTMLImageElement>(null);
+}) {
+  const buttonRef = useRef(null);
+  const containerRef = useRef(null);
+  const initialIconRef = useRef(null);
+  const targetIconRef = useRef(null);
   const isMorphedRef = useRef(false);
 
   useEffect(() => {

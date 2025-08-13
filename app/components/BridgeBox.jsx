@@ -7,7 +7,7 @@ const SwappingBridgingSection = () => {
     {
       number: "1",
       title: "Bridges Beyond Stablecoins",
-      description: "TrueFlow connects more than just tokens; it bridges economies. From one chain to another across chains with zero compromise and total confidence, backed by Plasma's long-standing reputation for trust, proven speed and security."
+      description: "TrueFlow connects more than just tokens; it bridges economies. From one chain to another across chains with zero compromise and total confidence, backed by Plasmas long-standing reputation for trust, proven speed and security."
     },
     {
       number: "2", 
@@ -47,7 +47,7 @@ const SwappingBridgingSection = () => {
               <p>TrueFlow enables low-gas, high speed swaps and bridges across supported networks with deep</p>
               <p>liquidity and zero compromise on security.</p>
               <br />
-              <p>Whether you're optimizing yield, repositioning capital, or moving between ecosystems, TrueFlow</p>
+              <p>Whether you&apos;re optimizing yield, repositioning capital, or moving between ecosystems, TrueFlow</p>
               <p>ensures your assets stay secure, stable, and truly flowing.</p>
               <br />
               <p className="font-normal">Experience DeFi the way it should be: fast, secure, and cross-chain by default.</p>

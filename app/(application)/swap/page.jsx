@@ -3,6 +3,7 @@
 import SwapInterface from "../../components/SwapModal";
 import BottomNavigation from "../../components/BottomNavigation";
 import { TrueFlowHeaderRedirect } from "@/app/components/Header";
+import TrueFlowFooter from "../Footer";
 
 export default function TrueFlowApp() {
   return (
@@ -13,6 +14,7 @@ export default function TrueFlowApp() {
           <SwapInterface />
         </div>
       </main>
+       <TrueFlowFooter/>
       {/* <BottomNavigation /> */}
     </div>
   );

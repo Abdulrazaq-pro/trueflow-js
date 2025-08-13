@@ -324,7 +324,7 @@ export function TrueFlowHeaderRedirect() {
       </header>
       
       {/* Spacer div to push content below the fixed header */}
-      <div className="h-20"></div>
+      <div className="h-6 md:h-0"></div>
     </>
   );
 }

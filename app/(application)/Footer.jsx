@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function TrueFlowFooter() {
   // Social media assets object
   const socialAssets = [
@@ -53,9 +55,9 @@ export default function TrueFlowFooter() {
   );
 
   return (
-    <footer className="bg-gray-100 py-6 px-4">
+    <footer className="bg-gray-100  mx-auto px-4 py-8 md:px-6 max-w-[80%] rounded-3xl md:rounded-full">
       {/* Desktop version */}
-      <div className="max-w-7xl mx-auto hidden md:flex items-center justify-between">
+      <div className=" mx-auto hidden md:flex items-center justify-between">
         {/* Left side - Social media icons */}
         {renderSocialIcons()}
 

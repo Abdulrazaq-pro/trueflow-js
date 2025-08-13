@@ -9,7 +9,7 @@ const SwappingBridgingSection = () => {
       number: "1",
       title: "Bridges Beyond Stablecoins",
       description:
-        "TrueFlow connects more than just tokens; it bridges economies. From one chain to another across chains with zero compromise and total confidence, backed by Plasma's long-standing reputation for trust, proven speed and security.",
+        "TrueFlow connects more than just tokens; it bridges economies. From one chain to another across chains with zero compromise and total confidence, backed by Plasmas long-standing reputation for trust, proven speed and security.",
     },
     {
       number: "2",
@@ -60,7 +60,7 @@ const SwappingBridgingSection = () => {
                   <p>liquidity and zero compromise on security.</p>
                   <br />
                   <p>
-                    Whether you're optimizing yield, repositioning capital, or
+                    Whether you&apos;re optimizing yield, repositioning capital, or
                     moving between ecosystems, TrueFlow
                   </p>
                   <p>

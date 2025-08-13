@@ -8,6 +8,7 @@ import { Badge } from "@/components/ui/badge";
 import * as Dialog from "@radix-ui/react-dialog";
 import { cn } from "@/lib/utils";
 import { TrueFlowHeaderRedirect } from "@/app/components/Header";
+import TrueFlowFooter from "../Footer";
 
 const FaucetStates = {
   READY: "ready",
@@ -239,7 +240,7 @@ export default function FaucetComponent() {
                     Claim Successful!
                   </CardTitle>
                   <p className="text-sm text-gray-600">
-                    You've received 100 USDT
+                    You&apos;ve received 100 USDT
                   </p>
                 </CardHeader>
 
@@ -302,9 +303,9 @@ export default function FaucetComponent() {
           </Card>
 
           {/* Footer */}
-         
         </div>
       </div>
+       <TrueFlowFooter/>
     </main>
   );
 }
