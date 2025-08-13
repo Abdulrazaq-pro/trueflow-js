@@ -60,7 +60,7 @@ export default function LandingPage() {
       <TrueFlowHeader />
       <main className="flex-1 ">
         {/* Hero Section */}
-        <div className="py-20">
+        <div className="pt-20 pb-4">
           <Hero />
         </div>
 

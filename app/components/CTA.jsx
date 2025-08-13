@@ -2,28 +2,25 @@ import { Text } from "@/components/Text";
 import { Button } from "@/components/ui/button";
 import React, { useState } from "react";
 
-
-
 export default function CTA() {
   const [isNavigating, setIsNavigating] = useState(false);
 
   return (
-    <div className="w-full flex justify-center  pt-12">
+    <div className="w-full flex justify-center  pt-12 ">
       {" "}
       {/* Outer container for full width and centering */}
       <div
         style={{ width: "70%" }}
-        className="flex justify-between items-center w-full px-6 bg-black rounded-t-lg"
+        className="flex flex-col items-center pb-4 text-center md:flex-row md:justify-between md:items-center w-full px-6 bg-black rounded-t-lg"
       >
-      
         {/* Inner container with max-width */}
         <div className="flex items-center">
           <Text
             as="h1"
             variant="heading"
-            size="3xl"
+            size={undefined} // skip predefined sizes
             weight="bold"
-            className="text-white tracking-tight my-8 flex justify-center items-center"
+            className="text-lg md:text-2xl text-white tracking-tight my-8 flex justify-center items-center"
           >
             Swapping & Bridging
           </Text>
