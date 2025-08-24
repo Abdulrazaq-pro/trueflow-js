@@ -18,8 +18,6 @@ import { useRouter } from "nextjs-toploader/app";
 
 import Loader from "@/components/shared/Loader";
 
-// import { TrueFlowLogo } from "@/components/TrueFlowLogo";
-
 import { cn } from "@/lib/utils";
 
 import { navigationData, iconMap } from "./constant";
@@ -121,7 +119,7 @@ export default function TrueFlowHeader() {
   return (
     <>
       <header
-        className={`fixed w-[90%] mx-auto bg-white rounded-lg my-3 top-2 left-0 right-0 z-50 transition-all duration-300 ${
+        className={`fixed w-[90%] mx-auto bg-white rounded-lg my-3 top-2 left-0 right-0 z-20 transition-all duration-300 ${
           scrolled ? " shadow-sm" : "bg-transparent"
         }`}
       >

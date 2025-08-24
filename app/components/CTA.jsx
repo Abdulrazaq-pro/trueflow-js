@@ -11,7 +11,7 @@ export default function CTA() {
       {/* Outer container for full width and centering */}
       <div
         style={{ width: "70%" }}
-        className="flex flex-col items-center pb-4 text-center md:flex-row md:justify-between md:items-center w-full px-6 bg-black rounded-t-lg"
+        className="flex flex-col items-center pb-4 text-center md:flex-row md:justify-between md:items-center w-full px-6 bg-black rounded-t-2xl"
       >
         {/* Inner container with max-width */}
         <div className="flex items-center">

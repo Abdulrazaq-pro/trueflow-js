@@ -65,26 +65,7 @@ export const navigationData = {
       ],
     },
   ],
-  // accountDropdownItems: [
-  //   {
-  //     title: "Dashboard",
-  //     description: "Key metrics and performance of TrueFlow",
-  //     href: "/dashboard",
-  //     icon: "BarChart3"
-  //   },
-  //   {
-  //     title: "Profile",
-  //     description: "View and manage your TrueFlow Account",
-  //     href: "/profile",
-  //     icon: "User"
-  //   },
-  //   {
-  //     title: "Transaction History",
-  //     description: "View your transaction history and activity",
-  //     href: "/transactions",
-  //     icon: "History"
-  //   }
-  // ]
+
 };
 
 export const iconMap = {
